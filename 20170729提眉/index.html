@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<title>七月优惠-开封华亿医疗美容整形</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link href="css/reset.css" type="text/css" rel="stylesheet"/>
+	<link href="./css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<link href="./css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<!--header文件调入-->
+	<script src="/modJs/header.js"></script>
+	<div class="content">
+		<!--sec-1-->
+		<div class="sec-1">	
+		</div>
+		<!--sec-2-->
+		<div class="sec-2">
+			<h1>想要变年轻&nbsp;&nbsp;也要美丽毫无顾忌</h1>
+			<ul>
+				<li>精雕<br/>无痕</li>
+				<li>灵动<br/>媚眼</li>
+				<li>一提<br/>三效</li>
+				<li>效果<br/>自然</li>
+				<li>恢复<br/>期短</li>
+				<li>伤口<br/>隐蔽</li>
+			</ul>
+			<a class="swt" href="/">点击咨询</a>
+		</div>
+		<!--sec-3-->
+		<div class="sec-3">
+			<p>手术前</p>
+			<p>去除下垂的皮肤</p>
+			<p>缝合</p>
+			<a class="swt" href="">询问提眉价格</a>
+		</div>
+		<!--sec-4-->
+		<div class="sec-4">
+			<h1>区别传统&nbsp;&nbsp;独一无二<br/><span>独特的设计理念</span></h1>
+			<ul>
+				<li>
+					<img src="images/sec_4_1.jpg">
+					<p>别人家的设计方案</p>
+				</li>
+				<li>
+					<img src="images/sec_4_2.jpg">
+					<p>华亿魔幻提眉设计方案</p>
+				</li>
+			</ul>
+			<p>传统提眉只是单纯切掉多余皮肤，对于术后眉形及眼睛神态的改善并不明显。<br/>
+			华亿魔幻提眉的设计方案着重在细节，讲究慢工出细活，往往一个设计方案需要近一个小时的精细设计。</p>
+			<a class="swt" href="">我要做提眉</a>
+		</div>
+		<!--sec-5-->
+		<div class="sec-5">
+			<h1>独树一帜的切口</h1>
+			<ul>
+				<li>别人家的设计方案</li>
+				<li>华亿魔幻提眉设计方案</li>
+			</ul>
+			<p>区别于传统提眉手术，华亿魔幻提眉采用眉中切口，这种方式在不改变眼睛原有<br/>神态的情况下，让眼睛更加的灵动妩媚，整个人看上去也更年轻。</p>
+			<a class="swt" href="">我要做提眉</a>
+		</div>
+		<!--sec-6-->
+		<div class="sec-6">
+			<h1>精细的缝合手法</h1>
+			<img src="images/sec_6.jpg" alt="缝合手法">
+			<p>为了保证术后的恢复效果，华亿魔幻提眉采用双层缝合技术，这种技术的有点在于术后回复效果自然，<br/>并且可以做到精细无痕。</p>
+			<a class="swt" href="">我要做提眉</a>
+		</div>
+		<!--sec-7-->
+		<div class="sec-7">
+			<h1>贴心的术前术后服务</h1>
+			<ul class="fc">
+				<li>术前进行身体检查，确保各项指标正常然后穿戴手术服，进入手术室。</li>
+				<li>术后可选择留院观察，安排专业的医护人员全程看护。</li>
+			</ul>
+			<a class="swt" href="">我要做提眉</a>
+		</div>
+		<!--sec-8-->
+		<div class="sec-8">
+			<h1>魔幻提眉这人对比</h1>
+			<img src="images/sec_8.jpg" alt="真人对比">
+			<a class="swt" href="">我也要变美</a>
+		</div>
+		<div class="sec-9">
+			<p>女人，拥有较好的面容<br/>就如夜空里的星星一般闪亮<br/>不做千篇一律<br/>只要适合自己<br/>华亿邀你一起倾国倾城</p>
+			<a class="swt" href="">即刻拥有完美的容颜</a>
+		</div>
+	</div>
+<script src="/modJs/footer.js"></script>
+<script src="/js/jquery-1.9.1.min.js"></script> 
+<script src="/js/jquery.SuperSlide.2.1.1.source.js"></script>
+<script src="/js/sideBar.js"></script> 
+<script>
+
+	$(function(){
+	//顶部导航菜单	
+	$(".menuWrap ul").slide({type:'menu',titCell:'.nav',targetCell:'.subMenu',effect:"slideDown", delayTime:300, triggerTime:100,titOnClassName:'active',startFun:function(i){			
+			var left = $(".menuWrap ul li").width()*i;
+			$(".menuWrap ul li").eq(i).find(".subMenu").css({left:-left+'px'});
+		}  });
+	$(".menuWrap ul li").eq(0).removeClass("active");	
+	$(".menuWrap ul li").each(function(index, element) {
+		$(this).mouseleave(function(e) {
+			e.preventDefault();
+			$(this).removeClass("active");
+		});
+	});	
+
+	if($(".contentBox  .bside li").length>=2){
+	$(".contentBox  .bside").slide({titCell:".focusBtns",mainCell:' ul',autoPage:'<span></span>',effect:'fold',delayTime:600,interTime:5000,autoPlay:true});}
+	if($(".contentBox  .dside li").length>=2){
+	$(".contentBox  .dside").slide({titCell:".focusBtns",mainCell:' ul',autoPage:'<span></span>',effect:'leftLoop',delayTime:600,interTime:5000,autoPlay:true});}
+		})
+
+</script>
+<script src="/swtimg/swt.js"></script>
+</body>
+
+</html>
